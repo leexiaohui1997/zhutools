@@ -1,6 +1,6 @@
 <view class="group">
   <view class="group-title">{{ title }}</view>
-  <view class="group-list">
+  <view class="group-list" wx:if="{{ tools.length }}">
     <view
       wx:for="{{ tools }}"
       wx:for-item="name"
@@ -12,5 +12,12 @@
         data-name="{{ name }}"
       />
     </view>
+  </view>
+
+  <view class="group-empty" wx:else>
+    <view class="group-empty-icon">
+      <text class="icon icon-empty"></text>
+    </view>
+    <text class="group-empty-text">{{ emptyText }}</text>
   </view>
 </view>

@@ -4,5 +4,6 @@
   title="{{ _toolsMap[name].title }}"
   showStar
   isStar="{{ utils.includes(starTools, name) }}"
+  noTop="{{ isMenu }}"
   bind:toggle-star="toggleStar"
 ></navigation-container>

@@ -4,10 +4,10 @@ const STORAGE_KEY = 'star_tools'
 
 export default Behavior({
   data: {
-    starTools: []
+    starTools: [],
   },
-  lifetimes: {
-    created() {
+  pageLifetimes: {
+    show() {
       this.fetchStarTools()
     }
   },

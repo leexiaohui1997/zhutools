@@ -1,7 +1,14 @@
+var IMAGE_DOMAIN = 'https://gitee.com/vacklee/files/raw/master/images/zhutools/'
+
 function includes(arr, item) {
   return arr.indexOf(item) >= 0
 }
 
+function image(name) {
+  return IMAGE_DOMAIN + name
+}
+
 module.exports = {
-  includes: includes
+  includes: includes,
+  image: image
 }

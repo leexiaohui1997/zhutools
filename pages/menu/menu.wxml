@@ -1,3 +1,9 @@
 <navigation-container title="便捷操作" noTop>
-  <view>111</view>
+  <group
+    wx:for="{{ group }}"
+    wx:key="title"
+    title="{{ item.title }}"
+    tools="{{ item.tools }}"
+    empty-text="{{ item.empty }}"
+  ></group>
 </navigation-container>

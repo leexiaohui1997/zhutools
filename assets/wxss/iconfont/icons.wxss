@@ -22,3 +22,6 @@
 .icon-home::before {
   content: "\e904";
 }
+.icon-empty::before {
+  content: "\e905";
+}

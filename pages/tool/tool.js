@@ -4,7 +4,10 @@ import toolStar from '../../behaviors/tool-star'
 Component({
   behaviors: [tools, toolStar],
   properties: {
-    name: String
+    name: String,
+    isMenu: {
+      type: Number,
+    }
   },
   methods: {
     toggleStar() {
