@@ -1,0 +1,27 @@
+{
+  "libVersion": "3.5.8",
+  "projectname": "zhutools",
+  "setting": {
+    "urlCheck": false,
+    "coverView": true,
+    "lazyloadPlaceholderEnable": false,
+    "skylineRenderEnable": true,
+    "preloadBackgroundData": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "工具页",
+          "pathName": "pages/tool/tool",
+          "query": "name=password-creator",
+          "scene": null,
+          "launchMode": "default"
+        }
+      ]
+    }
+  }
+}

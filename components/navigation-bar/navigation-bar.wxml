@@ -1,0 +1,29 @@
+<view
+  class="bar"
+  style="--aside-width: {{ asideWidth }}px; --height: {{  height }}px; --gap-h: {{ gapH }}px; --gap-v: {{ gapV }}px; --top: {{ noTop ? '16rpx' : 'env(safe-area-inset-top)' }}"
+>
+  <view class="bar-left">
+    <view
+      class="actions {{ simpleAction ? 'simple' : '' }}"
+    >
+      <view
+        wx:if="{{ showBack }}"
+        class="action"
+        bind:tap="back"
+      >
+        <text class="icon icon-{{ backHome ? 'home' : 'back' }}"></text>
+      </view>
+
+      <view
+        wx:if="{{ showStar }}"
+        class="action"
+        bind:tap="toggleStar"
+      >
+        <text class="icon icon-star{{ isStar ? '-fill' : '' }}"></text>
+      </view>
+    </view>
+  </view>
+  <view class="bar-main">
+    <text>{{ title }}</text>
+  </view>
+</view>

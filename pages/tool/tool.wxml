@@ -1,0 +1,8 @@
+<wxs module="utils" src="../../wxs/utils.wxs"></wxs>
+
+<navigation-container
+  title="{{ _toolsMap[name].title }}"
+  showStar
+  isStar="{{ utils.includes(starTools, name) }}"
+  bind:toggle-star="toggleStar"
+></navigation-container>

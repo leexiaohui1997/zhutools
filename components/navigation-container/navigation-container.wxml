@@ -1,0 +1,17 @@
+<view class="page {{ hasTabbar ? 'has-tabbar' : '' }}">
+  <navigation-bar
+    title="{{ title }}"
+    showStar="{{ showStar }}"
+    isStar="{{ isStar }}"
+    noTop="{{ noTop }}"
+    bind:toggle-star="toggleStar"
+  />
+  <scroll-view
+    type="custom"
+    class="scroll"
+    associative-container="pop-gesture"
+    scroll-y
+  >
+    <slot />
+  </scroll-view>
+</view>

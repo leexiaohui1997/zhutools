@@ -1,0 +1,9 @@
+<navigation-container>
+  <group
+    class="group"
+    wx:for="{{ group }}"
+    wx:key="title"
+    title="{{ item.title }}"
+    tools="{{ item.tools }}"
+  ></group>
+</navigation-container>

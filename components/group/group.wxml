@@ -1,0 +1,16 @@
+<view class="group">
+  <view class="group-title">{{ title }}</view>
+  <view class="group-list">
+    <view
+      wx:for="{{ tools }}"
+      wx:for-item="name"
+      wx:key="*this"
+    >
+      <tool-info
+        name="{{ name }}"
+        bind:tap="clickTool"
+        data-name="{{ name }}"
+      />
+    </view>
+  </view>
+</view>

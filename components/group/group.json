@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tool-info": "../tool-info/tool-info"
+  }
+}

@@ -1,0 +1,21 @@
+<view class="tabbar">
+  <block wx:for="{{ list }}">
+    <view
+      wx:if="{{ item === '#' }}"
+      wx:key="#"
+      class="tabbar-menu"
+      bind:tap="openMenu"
+    >
+      <text class="icon icon-menu"></text>
+    </view>
+    <view
+      class="tabbar-item {{ activePage === item.page ? 'active' : '' }}"
+      bind:tap="clickTab"
+      data-item="{{ item }}"
+      wx:key="{{ item.page }}"
+      wx:else
+    >
+      <text>{{ item.text }}</text>
+    </view>
+  </block>
+</view>

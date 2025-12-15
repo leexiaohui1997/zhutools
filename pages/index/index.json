@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navigation-container": "../../components/navigation-container/navigation-container",
+    "group": "../../components/group/group"
+  }
+}

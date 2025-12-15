@@ -1,0 +1,24 @@
+@import "./icon-fonts.wxss";
+
+.icon {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.icon-menu::before {
+  content: "\e900";
+}
+.icon-back::before {
+  content: "\e901";
+}
+.icon-star::before {
+  content: "\e902";
+}
+.icon-star-fill::before {
+  content: "\e903";
+}
+.icon-home::before {
+  content: "\e904";
+}

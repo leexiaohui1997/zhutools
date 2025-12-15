@@ -1,0 +1,18 @@
+.group-title {
+  padding: 0 24rpx;
+  line-height: 80rpx;
+  color: #17264c;
+  opacity: 0.7;
+  font-weight: 500;
+}
+.group-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 24rpx;
+  gap: 24rpx;
+  position: relative;
+}
+.group-list > view {
+  width: calc((100% - 50rpx) / 3);
+  position: relative;
+}

@@ -1,0 +1,13 @@
+<view class="tool">
+  <view class="tool-inner">
+    <image
+      class="tool-logo"
+      src="{{ IMAGE_DOMAIN }}{{ isLogoError ? 'tool-default.png' : name + '.jpg' }}"
+      binderror="loadLogoFail"
+    />
+
+    <text
+      class="tool-title"
+    >{{ _toolsMap[name].title }}</text>
+  </view>
+</view>
