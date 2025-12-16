@@ -22,5 +22,8 @@
     "include": []
   },
   "appid": "wx0b77385f362893f6",
-  "editorSetting": {}
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }
